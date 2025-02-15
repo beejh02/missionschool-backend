@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>로그인</title>
+    <!-- jquery cdn -->
+    <script
+            src="https://code.jquery.com/jquery-3.6.3.min.js"
+            integrity="sha256-pvPw+upLPUjgMXY0G+8O0xUf+/Im1MZjXxxgOcBQBXU="
+            crossorigin="anonymous"></script>
+</head>
+<body>
+    <h2>로그인</h2>
+
+    <!-- 로그인 폼 -->
+    <form action="/member/login" method="post">
+        이메일: <input type="text" name="memberEmail" id="loginEmail" required><br>
+        비밀번호: <input type="password" name="memberPassword" required><br>
+        <input type="submit" value="로그인">
+    </form>
+
+</body>
+</html>
